@@ -69,17 +69,37 @@
       justify-items: center;
       margin-top: 2rem;
     }
-    .card {
-      background: #fff;
-      border-radius: 10px;
-      padding: 1rem;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-      text-align: center;
-      max-width: 240px;
-    }
-    .card img {
-      border-radius: 8px;
-    }
+   .card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 0;              /* remove internal space */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  max-width: 240px;
+  overflow: hidden;        /* ensures nothing spills out */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;          /* removes unwanted inline spacing */
+  border-radius: 0;        /* ensures image fills entire top */
+}
+
+.card h3, 
+.card p, 
+.card button {
+  margin: 0;               /* remove default browser margins */
+  padding: 0.5rem 0;       /* add controlled vertical spacing only */
+  width: 100%;             /* makes button/text fill full card width */
+  box-sizing: border-box;  
+}
+
+.card .btn.small {
+  border-radius: 0;         /* button will span full card width cleanly */
+  padding: 0.75rem 0;
+}
+
     .sub {
       font-size: 0.85rem;
       color: gray;
@@ -166,6 +186,7 @@
   </main>
 </body>
 </html>
+
 
 
 
