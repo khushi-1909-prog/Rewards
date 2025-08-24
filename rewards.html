@@ -54,10 +54,13 @@
       text-align: center;
     }
     .progress-section img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
-
+       max-width: 500px;   /* limits image width */
+       width: 100%;        /* keeps it responsive */
+       height: auto;       /* maintains aspect ratio */
+       display: block;
+       margin: 0 auto;     /* centers the image */
+       border-radius: 10px;
+}
     /* Rewards grid tweaks */
     .grid {
       display: grid;
@@ -163,4 +166,5 @@
   </main>
 </body>
 </html>
+
 
