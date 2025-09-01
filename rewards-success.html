@@ -99,9 +99,20 @@
     </section>
 
     <a href="rewards.html" class="btn">Claim Rewards</a>
-  </main>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script>
+  window.addEventListener('load', () => {
+    confetti({
+      particleCount: 150,
+      spread: 80,
+      origin: { y: 0.6 }
+    });
+  });
+</script>
+</main>
 </body>
 </html>
+
 
 
 
