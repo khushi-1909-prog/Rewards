@@ -39,20 +39,25 @@
       font-size: 14px;
       margin: 6px 0;
     }
-    .promo-box {
-      background: #0096FF;
-      color: #fff;
-      padding: 15px;
-      border-radius: 10px;
-      margin: 20px 0;
-      text-align: left;
-      width: 100%;
-    }
-    .promo-box h3 {
-      font-size: 15px;
-      margin: 0 0 8px;
-      white-space: nowrap;
-    }
+  .promo-box {
+  background: #0096FF;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px 0;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box; /* ensures padding doesn't cause overflow */
+  }
+ 
+ .promo-box h3 {
+  font-size: 14px;          /* slightly reduced to fit */
+  margin: 0 0 8px;
+  white-space: nowrap;      /* keep it on one line */
+  overflow: hidden;         /* hides overflow if too long */
+  text-overflow: ellipsis;  /* adds "..." if it still doesn't fit */
+  }
+
     .promo-box p {
       font-size: 13px;
       margin: 0;
@@ -97,6 +102,7 @@
   </main>
 </body>
 </html>
+
 
 
 
