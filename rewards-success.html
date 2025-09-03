@@ -56,22 +56,32 @@
     }
 
     /* Rewards Box */
-    .rewards-box {
-      margin: 1rem 0;
-      padding: 1rem;
-      background: #007bff;
-      color: white;
-      border-radius: 16px;
-      font-size: 0.9rem;
-      line-height: 1.4;
-      animation: pulse 1.5s infinite alternate;
-    }
+   .rewards-box {
+  margin: 1rem auto;          /* center with margin */
+  padding: 1rem;
+  width: 90%;                 /* always fit within screen */
+  max-width: 350px;           /* prevents being too wide */
+  background: #007bff;
+  color: #fff;                /* white text for visibility */
+  border-radius: 16px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.5);
+}
 
-    .rewards-box h3 {
-      margin: 0 0 0.5rem;
-      font-size: 1rem;
-      font-weight: bold;
-    }
+.rewards-box h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #fff;                /* bright white heading */
+}
+
+.rewards-box p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #e6f0ff;             /* lighter blue-white for readability */
+}
 
     @keyframes pulse {
       from { transform: scale(1); box-shadow: 0 0 10px rgba(0,123,255,0.6);}
@@ -165,3 +175,4 @@
   </script>
 </body>
 </html>
+
