@@ -58,23 +58,28 @@ img {
 /* =======================================================
    3. NAVBAR
    ======================================================= */
+/* Navbar */
 .navbar {
   position: sticky;
   top: 0;
   z-index: 20;
   background: #fff;
   border-bottom: 1px solid var(--border);
-  padding: 1rem 1.5rem;   /* increased padding */
+  padding: 0;                 /* remove extra padding */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;           /* fixed height for bigger navbar */
+  height: 70px;               /* increase navbar height */
 }
 
-.logo {
-  width: 60px;   /* increased size */
-  height: auto;
+/* Logo inside navbar */
+.navbar img {
+  height: 100%;               /* fill navbar height */
+  width: auto;                /* keep aspect ratio */
+  object-fit: contain;        /* scale without cutting */
+  display: block;
 }
+
 
 .brand {
   font-size: 1.6rem;   /* slightly larger text */
@@ -276,6 +281,7 @@ img {
   font-size: 0.8rem;
   padding: 0.3rem 0.8rem;
 }
+
 
 
 
