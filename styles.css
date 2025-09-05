@@ -112,7 +112,9 @@ img {
 }
 
 .discount-badge {
-
+  display: block;
+  text-align: right;   /* Aligns ₹719 to the right */
+  margin-top: 4px;
   font-size: 14px;
   font-weight: bold;
   color: #16a34a;
@@ -121,9 +123,6 @@ img {
 
 
 .new-price {
-  display: block;
-  text-align: right;   /* Aligns ₹719 to the right */
-  margin-top: 4px;
   font-size: 15px;
   font-weight: bold;
   color: #374151;
@@ -348,6 +347,7 @@ img {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.2); }
 }
+
 
 
 
