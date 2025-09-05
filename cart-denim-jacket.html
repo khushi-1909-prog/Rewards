@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Example</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart • Striped T‑Shirt</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-    .shipping {
-      color: black;
-      margin: 8px 0;
-    }
     .shipping .amount {
       position: relative;
       display: inline-block;
@@ -32,31 +26,36 @@
       font-size: 12px;
       margin-top: 4px;
     }
-    button {
-      margin-top: 10px;
-      padding: 6px 12px;
-      border: none;
-      background: #007bff;
-      color: white;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-    button:hover {
-      background: #0056b3;
-    }
   </style>
-</head>
-<body>
-  <div>
-    <h3>Denim Jacket</h3>
-    <p>Price: ₹ 2,124</p>
-    <p class="shipping">
-      Shipping: <span class="amount">₹ 80</span>
-      <span id="freeText" class="free">Free Shipping</span>
-    </p>
-    <button onclick="showFreeShipping()">Check Free Shipping</button>
-  </div>
 
+
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="denim-jacket.html" class="icon-btn"><i class="fas fa-arrow-left"></i></a>
+    <h1 class="brand">Your Cart</h1>
+    <span class="icon-btn badge">1</span>
+  </header>
+
+  <main class="container cart-page">
+    <section class="cart-item">
+      <img src="images/denimjacket.jpg" alt="denim jacket">
+      <div>
+        <h3>Denim Jacket</h3>
+        <p>Price: ₹ 2,124</p>
+        <p class="shipping">
+          Shipping: <span class="amount">₹ 80</span>
+          <span id="freeText" class="free">Free Shipping</span>
+        </p>
+
+        <p class="total">Total: ₹ 2,124</p>
+       
+      </div>
+    </section>
+
+    <a href="success.html" class="btn full place-order">Place Order</a>
+  </main>
   <script>
     function showFreeShipping() {
       document.getElementById("freeText").style.display = "block";
