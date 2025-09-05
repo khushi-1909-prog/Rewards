@@ -132,10 +132,7 @@ img {
 }
 
 /* Animation for discount */
-@keyframes pop {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.2); }
-}
+
 
 
 
@@ -349,6 +346,7 @@ img {
   font-size: 0.8rem;
   padding: 0.3rem 0.8rem;
 }
+
 
 
 
