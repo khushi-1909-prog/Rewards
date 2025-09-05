@@ -79,69 +79,63 @@ img {
   object-fit: contain;        /* scale without cutting */
   display: block;
 }
-
-/* container is only as wide as the old row; lets us align new price to its right edge */
-.price-box{
-  display:inline-block;
-  position:relative;
+.price-box {
+  display: inline-block;
   margin: 5px 0 12px;
 }
 
-.old-row{
-  display:flex;
-  align-items:center;
-  gap:6px;
+.old-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
 }
 
-.old-amount{
-  position:relative;
-  font-weight:700;
-  font-size:18px;
-  color:#111;
-  text-decoration:none;           /* ensure no default strike */
-  padding:0 2px;
+.old-amount {
+  position: relative;
+  font-weight: 700;
+  font-size: 18px;
+  color: #111;
+  padding: 0 2px;
 }
 
-/* red bold strike ONLY over the old price number */
-.old-amount::after{
-  content:"";
-  position:absolute;
-  left:0; 
-  right:0;
-  top:50%;
-  height:2px;
-  background:#e11d48;            /* red */
-  transform:translateY(-50%);
+/* Red bold strike */
+.old-amount::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 2px;
+  background: red;
+  transform: translateY(-50%);
 }
 
-.paren { 
-   color:#6b7280; 
-   font-size:14px; 
-   }
-
-/* the green popping discount */
 .discount-badge {
-  font-size:14px;
-  font-weight:700;
-  color:#16a34a;
+  font-size: 14px;
+  font-weight: bold;
+  color: #16a34a;
   animation: pop 1.2s infinite;
 }
 
-/* new price appears just below, aligned to the right side of the old row */
-.new-price{
-  position:absolute;
-  right:0;            /* right align to the old row width */
-  top:100%;           /* put it below */
-  margin-top:4px;
-  font-size:15px;     /* smaller */
-  font-weight:bold;
-  color:#374151;
+/* New price aligned to right, below old price */
+.new-row {
+  display: flex;
+  justify-content: flex-end;  /* pushes price to right */
+  margin-top: 4px;
 }
+
+.new-price {
+  font-size: 15px;
+  font-weight: bold;
+  color: #374151;
+}
+
+/* Animation for discount */
 @keyframes pop {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.2); }
 }
-
 
 
 
@@ -355,6 +349,7 @@ img {
   font-size: 0.8rem;
   padding: 0.3rem 0.8rem;
 }
+
 
 
 
