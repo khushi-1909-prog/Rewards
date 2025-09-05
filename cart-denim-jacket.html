@@ -1,60 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cart • Striped T‑Shirt</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    .shipping {
-      display: inline-block;
-      text-align: center;
-    }
-    
-    .shipping .price::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  height: 2px;
-  background: red;   /* Red strike */
-  transform: translateY(-50%);
-  }
-    
-     .shipping .free {
-      display: block;
-      color: green;
-      font-size: 14px;
-      margin-top: 4px;
-    }
-  </style>
-</head>
-
-
-
-  <header class="navbar">
-    <a href="denim-jacket.html" class="icon-btn"><i class="fas fa-arrow-left"></i></a>
-    <h1 class="brand">Your Cart</h1>
-    <span class="icon-btn badge">1</span>
-  </header>
-<body>
-  <main class="container cart-page">
-    <section class="cart-item">
-      <img src="images/denimjacket.jpg" alt="denim jacket">
-      <!DOCTYPE html>
-<html lang="en">
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Card</title>
+  <title>Product Example</title>
   <style>
-  .shipping-price {
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .shipping {
+      color: black;
+      margin: 8px 0;
+    }
+    .shipping .amount {
       position: relative;
       display: inline-block;
       color: black;
     }
-    .shipping-price::after {
+    .shipping .amount::after {
       content: "";
       position: absolute;
       top: 50%;
@@ -64,10 +27,22 @@
       background: red;
     }
     .free {
-      display: block;
+      display: none; /* hidden initially */
       color: green;
-      font-size: 12px; /* smaller */
+      font-size: 12px;
       margin-top: 4px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 6px 12px;
+      border: none;
+      background: #007bff;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:hover {
+      background: #0056b3;
     }
   </style>
 </head>
@@ -75,26 +50,17 @@
   <div>
     <h3>Denim Jacket</h3>
     <p>Price: ₹ 2,124</p>
-    <p>
-    <class="shipping-price"> shipping: ₹ 80</p>
-      <span class="free">Free Shipping</span>
+    <p class="shipping">
+      Shipping: <span class="amount">₹ 80</span>
+      <span id="freeText" class="free">Free Shipping</span>
     </p>
+    <button onclick="showFreeShipping()">Check Free Shipping</button>
   </div>
+
+  <script>
+    function showFreeShipping() {
+      document.getElementById("freeText").style.display = "block";
+    }
+  </script>
 </body>
 </html>
-
-    </section>
-
-    <a href="success.html" class="btn full place-order">Place Order</a>
-  </main>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
