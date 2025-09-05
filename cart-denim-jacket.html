@@ -10,20 +10,19 @@
       display: inline-block;
       text-align: center;
     }
-    .shipping .price {
-      position: relative;
-      display: inline-block;
-      color: black;
-    }
-    .shipping .price {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 50%;
-      border-top: 2px solid red;
-    }
-    .shipping .free::after {
+    
+    .shipping .price::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 2px;
+  background: red;   /* Red strike */
+  transform: translateY(-50%);
+  }
+    
+     .shipping .free {
       display: block;
       color: green;
       font-size: 14px;
@@ -90,6 +89,7 @@
   </main>
 </body>
 </html>
+
 
 
 
