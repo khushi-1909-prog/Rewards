@@ -84,7 +84,7 @@ img {
 .price-box{
   display:inline-block;
   position:relative;
-  margin:4px 0 10px;
+  margin: 5px 0 12px;
 }
 
 .old-row{
@@ -106,20 +106,25 @@ img {
 .old-amount::after{
   content:"";
   position:absolute;
-  left:0; right:0;
+  left:0; 
+  right:0;
   top:50%;
   height:2px;
   background:#e11d48;            /* red */
   transform:translateY(-50%);
 }
 
-.paren{ color:#6b7280; font-size:14px; }
+.paren { 
+   color:#6b7280; 
+   font-size:14px; 
+   }
 
 /* the green popping discount */
-.discount-badge{
+.discount-badge {
   font-size:14px;
   font-weight:700;
   color:#16a34a;
+  animation: pop 1.2s infinite;
 }
 
 /* new price appears just below, aligned to the right side of the old row */
@@ -128,9 +133,13 @@ img {
   right:0;            /* right align to the old row width */
   top:100%;           /* put it below */
   margin-top:4px;
-  font-size:16px;     /* smaller */
-  font-weight:700;
+  font-size:15px;     /* smaller */
+  font-weight:bold;
   color:#374151;
+}
+@keyframes pop {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
 }
 
 
@@ -346,6 +355,7 @@ img {
   font-size: 0.8rem;
   padding: 0.3rem 0.8rem;
 }
+
 
 
 
