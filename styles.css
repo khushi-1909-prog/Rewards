@@ -112,18 +112,15 @@ img {
 }
 
 .discount-badge {
+  display: block;
+  text-align: right;   /* Aligns ₹719 to the right */
+  margin-top: 4px;
   font-size: 14px;
   font-weight: bold;
   color: #16a34a;
   animation: pop 1.2s infinite;
 }
 
-/* New price aligned to right, below old price */
-.new-row {
-  display: flex;
-  justify-content: flex-end;  /* pushes price to right */
-  margin-top: 4px;
-}
 
 .new-price {
   font-size: 15px;
@@ -350,6 +347,7 @@ img {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.2); }
 }
+
 
 
 
