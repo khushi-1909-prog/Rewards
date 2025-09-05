@@ -19,16 +19,50 @@
       <img src="images/denimjacket.jpg" alt="denim jacket">
       <div>
         <h3>Denim Jacket</h3>
-       <p>Price: ₹ 2,124</p>
-<p>
-  Shipping: 
-  <span style="position: relative; display: inline-block; text-align: center;">
-    <span style="color: black;">₹ 80</span>
-    <span style="position: absolute; left: 0; right: 0; top: 50%; border-top: 2px solid red;"></span>
-    <br>
-    <span style="color: green; font-size: 14px;">Free Shipping</span>
-  </span>
-</p>
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Example</title>
+  <style>
+    .shipping {
+      display: inline-block;
+      text-align: center;
+    }
+    .shipping .price {
+      position: relative;
+      display: inline-block;
+      color: black;
+    }
+    .shipping .price::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      border-top: 2px solid red;
+    }
+    .shipping .free {
+      display: block;
+      color: green;
+      font-size: 14px;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <p><strong>Denim Jacket</strong></p>
+  <p>Price: ₹ 2,124</p>
+  <p>
+    Shipping:
+    <span class="shipping">
+      <span class="price">₹ 80</span>
+      <span class="free">Free Shipping</span>
+    </span>
+  </p>
+</body>
+</html>
 
       </div>
     </section>
@@ -37,6 +71,7 @@
   </main>
 </body>
 </html>
+
 
 
 
