@@ -15,7 +15,7 @@
       display: inline-block;
       color: black;
     }
-    .shipping .price::after {
+    .shipping .price {
       content: "";
       position: absolute;
       left: 0;
@@ -23,7 +23,7 @@
       top: 50%;
       border-top: 2px solid red;
     }
-    .shipping .free {
+    .shipping .free::after {
       display: block;
       color: green;
       font-size: 14px;
@@ -90,6 +90,7 @@
   </main>
 </body>
 </html>
+
 
 
 
