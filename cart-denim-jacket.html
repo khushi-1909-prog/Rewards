@@ -3,32 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cart • Striped T‑Shirt</title>
+  <title>Cart • denim jacket</title>
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    .shipping .amount {
-      position: relative;
-      display: inline-block;
-      color: black;
-    }
-    .shipping .amount::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background: red;
-    }
-    .free {
-      display: none; /* hidden initially */
-      color: green;
-      font-size: 12px;
-      margin-top: 4px;
-    }
-  </style>
-
-
 </head>
 
 <body>
@@ -43,23 +19,13 @@
       <img src="images/denimjacket.jpg" alt="denim jacket">
       <div>
         <h3>Denim Jacket</h3>
-        <p>Price: ₹ 2,124</p>
-        <p class="shipping">
-          Shipping: <span class="amount">₹ 80</span>
-          <span id="freeText" class="free">Free Shipping</span>
-        </p>
-
-        <p class="total">Total: ₹ 2,124</p>
-       
+        <p>Price: ₹ 2,499</p>
+        <p>Shipping: ₹ 50</p>
+        <p class="total">Total: ₹ 2,549</p>
       </div>
     </section>
 
     <a href="success.html" class="btn full place-order">Place Order</a>
   </main>
-  <script>
-    function showFreeShipping() {
-      document.getElementById("freeText").style.display = "block";
-    }
-  </script>
 </body>
 </html>
