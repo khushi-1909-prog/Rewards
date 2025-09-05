@@ -79,6 +79,30 @@ img {
   object-fit: contain;        /* scale without cutting */
   display: block;
 }
+.old-price {
+  font-size: 14px;
+  color: #888;
+  text-decoration: line-through;
+  margin: 0;
+}
+
+.new-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d9534f; /* red for discount highlight */
+  margin: 0 0 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 .brand {
@@ -281,6 +305,7 @@ img {
   font-size: 0.8rem;
   padding: 0.3rem 0.8rem;
 }
+
 
 
 
