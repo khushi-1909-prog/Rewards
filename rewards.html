@@ -24,6 +24,34 @@
       justify-content: space-around;
       margin-top: 1rem;
     }
+     .reward-details {
+    background: #fff;
+    color: #000;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .reward-details h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: #333;
+  }
+  .reward-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    line-height: 1.6;
+  }
+  .reward-details li {
+    margin-bottom: 0.75rem;
+  }
+  .reward-details strong {
+    color: royalblue;
+  }
+</style>
     .points-box {
       background: #fff;
       color: #000;
@@ -124,8 +152,16 @@
 
     <!-- Progress Bar Section -->
     <section class="progress-section">
-      <img src="images/bar.jpeg" alt="How does it work" />
-    </section>
+  <div class="reward-details">
+    <h3>Reward Tiers</h3>
+    <ul>
+      <li><strong>Monthly spend of ₹2000</strong> – <strong>Bronze Badge</strong> with 5% cashback points on every purchase.</li>
+      <li><strong>Monthly spend of ₹2000–₹5000</strong> – <strong>Silver Badge</strong> with 7.5% cashback points plus free delivery on every purchase.</li>
+      <li><strong>Monthly spend of ₹5000 or more</strong> – <strong>Gold Badge</strong> with 10% cashback points, free delivery, and exclusive monthly gifts.</li>
+    </ul>
+  </div>
+</section>
+
 
     <!-- Top tab buttons -->
     
@@ -166,6 +202,7 @@
   </main>
 </body>
 </html>
+
 
 
 
