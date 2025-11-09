@@ -80,8 +80,31 @@
       <source src="v/VID_20251101010301.mp4" type="video/mp4">
     </video>
   </div>
+<script>
+    // Use Intersection Observer to auto-play videos on scroll
+    const videos = document.querySelectorAll("video");
+
+    const options = {
+      threshold: 0.5 // Play when 50% of video is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.play();
+        } else {
+          entry.target.pause();
+        }
+      });
+    }, options);
+
+    videos.forEach(video => {
+      observer.observe(video);
+    });
+  </script>
 
 </body>
 </html>
+
 
 
