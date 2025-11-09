@@ -6,12 +6,17 @@
   <title>Better Buy • Videos</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
+   * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
+
+    body {
+      background: black;
+      overflow-x: hidden;
+    }
+
     header {
       text-align: center;
       background: royalblue;
@@ -19,28 +24,38 @@
       padding: 15px;
       font-size: 22px;
       font-weight: bold;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
+
     .video-container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 30px;
-      padding: 30px;
+      gap: 0;
+      width: 100vw;
+      height: 100%;
     }
+
     video {
-      width: 80%;
-      max-width: 700px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover; /* Makes video fill screen */
+      border-radius: 0;
     }
+
     .back-btn {
-      display: inline-block;
-      margin: 20px;
+      position: fixed;
+      top: 15px;
+      left: 15px;
       text-decoration: none;
       color: white;
-      background: royalblue;
+      background: rgba(0,0,0,0.5);
       padding: 10px 15px;
       border-radius: 8px;
+      z-index: 20;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -68,4 +83,5 @@
 
 </body>
 </html>
+
 
